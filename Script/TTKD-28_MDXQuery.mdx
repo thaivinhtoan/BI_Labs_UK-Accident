@@ -1,0 +1,71 @@
+﻿--Q1
+Select non empty {[Dim Casualty Severity].[Casualty_severity_lable].[Casualty_severity_lable],[Dim Casualty Severity].[Casualty_severity_lable]} on columns, 
+		non empty [Dim Local Authority District].[Local_lable].[Local_lable] on rows
+From [DDS2]
+where [Measures].[Fact Casualties Count]
+
+--Q2
+Select non empty crossjoin([Dim Date].[Hierarchy].[Year],[Dim Date].[Quarter].[Quarter]) on columns, 
+		non empty crossjoin([Dim Local Authority District].[Local_lable].[Local_lable],[Dim Casualty Severity].[Casualty_severity_lable].[Casualty_severity_lable]) on rows
+From [DDS2]
+where [Measures].[Fact Casualties Count]
+
+
+
+–-Q3
+select non empty [Dim Date].[Year].[Year] on columns,
+non empty crossjoin([Dim Casualty Severity].[Casualty_severity_lable].[Casualty_severity_lable],
+[Dim Sex Of Casualty].[Sex Of Casualty Label].[Sex Of Casualty Label],
+[Dim Casualty Type].[Casualty Type].[Casualty Type],
+[Dim Age Band].[Age Band].[Age Band])
+ on rows
+from [DDS2]
+where ([Measures].[Fact Casualties Count], [Dim Casualty Severity].[ID Casualty Severity].&[1])
+
+-–Q4
+SELECT non empty [Dim Date].[Year].[Year] on columns,
+non empty crossjoin([Dim Accident Severity].[Accident Severity Label].[Accident Severity Label],
+[Dim Time Of Date].[Time Of Date Label].[Time Of Date Label]) on rows
+FROM [DDS2]
+WHERE [Measures].[Fact Accident Count]
+
+
+-- 5. Thống kê số lượng TNGT theo Mức Độ Nghiêm Trọng, Vùng
+--(Urban_or_Rural_Area), và Kiểu Đường (Road Type) trong các năm.
+
+select non empty crossjoin([Dim Date].[Year].[Year], 
+[Dim Urban Rural].[Urban Rural Label].[Urban Rural Label]) on columns,
+non empty crossjoin ([Dim Road Type].[Road Type Label].[Road Type Label],
+[Dim Accident Severity].[Accident Severity Label].[Accident Severity Label]) on rows
+from [DDS2]
+where [Measures].[Fact Accident Count]
+
+--6. Thống kê số lượng nạn nhân theo Mức Độ Nghiêm Trọng, Loại Nạn Nhân
+--(Casualty Type) và Độ Tuổi trong các năm
+
+select non empty crossjoin([Dim Date].[Hierarchy].[Year],
+[Dim Casualty Severity].[Casualty_severity_lable].[Casualty_severity_lable])  on columns,
+non empty crossjoin([Dim Age Band].[Age Band].[Age Band],[Dim Casualty Type].[Casualty Type].[Casualty Type]
+ )ON ROWS
+from [DDS2]
+where ([Measures].[Fact Casualties Count])
+
+
+
+--Q7
+select non empty {[Dim Vehicle Type].[Vehicle Type Label].[Vehicle Type Label],[Dim Vehicle Type].[Vehicle Type Label]} on columns,
+non empty {[Dim Journey Purpose].[Journey Purpose Label].[Journey Purpose Label],[Dim Journey Purpose].[Journey Purpose Label]} on rows
+from [DDS2]
+where [Measures].[Fact Vehicle Count];
+
+--Q9
+select non empty [Dim Date].[Year].[Year] on columns,
+non empty crossjoin([Dim Accident Severity].[Accident Severity Label].[Accident Severity Label],
+[Dim Built-up Road].[Built-up Road Label].[Built-up Road Label]) on rows
+from [DDS2]
+where [Measures].[Fact Accident Count]
+
+--Q11 - Variance
+select {[Measures].[Fact Accident Count],[Measures].[Parellel Period Accident Count],[Measures].[Parellel Period Accident Count Variance],[Measures].[Parellel Period Accident Count Variance%]} on columns,
+non empty [Dim Date].[Hierarchy].[Year] on rows
+from [DDS2]

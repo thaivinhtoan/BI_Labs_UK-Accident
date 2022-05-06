@@ -1,0 +1,159 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>OLAP2</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>uiU2W8r0qSA7JUV06PslUdXqfPo=1/8/2022 3:45:36 PM1/7/2022 5:03:12 PM</TimeStamp>
+        <ID>
+          <String>DDS2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>qtKnf16IknQqZ08TK6MIp1OwcyQ=1/7/2022 5:03:54 PM1/7/2022 5:03:54 PM</TimeStamp>
+        <ID>
+          <String>DDS2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LPPWj+gwQPqLnjEpl520PYkBtB0=1/9/2022 10:26:46 AM1/7/2022 5:06:40 PM</TimeStamp>
+        <ID>
+          <String>Dim Vehicle Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Re1ygZ2jGsZUkTosGieSCF1srUM=1/9/2022 10:26:44 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Journey Purpose</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7puCv3Pgz4jZ2WlEGOdeaCqBhr0=1/7/2022 5:08:37 PM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Local Authority District</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gpqrguEigoVV4qk4HIkUBTcXfuU=1/8/2022 8:32:56 PM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Casualty Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>T4P3jbMZTMGkcxBbdr4sFy+p0dI=1/9/2022 10:27:24 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Sex Of Casualty</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EnxUA0l/0lZHEwpQTCrB4u2Uy2k=1/7/2022 5:08:35 PM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Casualty Severity</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DD9X9DZj32mvCh5bra3xvM/H+bU=1/8/2022 8:26:15 PM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Age Band</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zUUP1z3N0H/Q7k3Dj+c5xG0nhhY=1/7/2022 5:10:08 PM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ywo+1F7/++Whn0FE2zHmHNWcYts=1/9/2022 10:28:42 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Built-up Road</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c+TR9cgsSc386rZGzq+zO56f8eA=1/9/2022 10:28:42 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Time Of Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JYGzvjd04bYXhj1G55A9+9gNBTQ=1/9/2022 10:28:42 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Urban Rural</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Pc73QBIMUOlA/ABLGnKatwylN4c=1/9/2022 10:29:01 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Accident Severity</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>caR2YYflyNJaM0Dm6GgvF90g53I=1/9/2022 10:47:32 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Geography</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dMM6J1JuvUoILIAp4HyeVy7THA8=1/9/2022 10:29:21 AM1/7/2022 5:06:41 PM</TimeStamp>
+        <ID>
+          <String>Dim Road Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>1yCAhF7OSe51VYNxhlHd4Ww1txc=1/9/2022 10:47:32 AM1/7/2022 5:06:40 PMNbTCjYBArkqqYQfg2AHNqSfe+KU=1/7/2022 5:06:41 PM1/7/2022 5:06:40 PM</TimeStamp>
+        <ID>
+          <String>DDS2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>4sKYB8JA7ekIV8A4Gt5D5dbBVak=1/9/2022 11:00:12 AM1/8/2022 3:40:22 PM</TimeStamp>
+        <ID>
+          <String>Fact Accident</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>YeFtPWnJUVzpGDjuwmK629kjk2E=1/7/2022 5:01:24 PM1/7/2022 5:01:24 PM</TimeStamp>
+      <ID>
+        <String>OLAP2</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-01-09T08:31:21.763333Z</LastDeployed>
+</DeploymentSnapshot>

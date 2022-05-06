@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/20/2021 2:29:48 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VANHAI350"
+  DTS:CreatorName="VANHAI350\vanha"
+  DTS:DTSID="{07BDE640-C925-47CE-91DC-B406774613CE}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{32E022AA-557F-4308-9E44-5107A752FAE6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>
